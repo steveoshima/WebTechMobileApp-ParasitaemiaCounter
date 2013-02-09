@@ -1,0 +1,89 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+	/* prevent callout to copy image, etc when tap to hold */ 
+	-webkit-touch-callout: none; 
+	
+	/* prevent webkit from resizing text to fit */ 
+	-webkit-text-size-adjust: none; 
+	
+	/* make transparent link selection, adjust last value opacity 0 to 1.0 
+	*/ 
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 
+	
+	/* prevent copy paste, to allow, change 'none' to 'text' */ 
+	-webkit-user-select: none; 
+}
+
+button {
+	/*-webkit-tap-highlight-color: rgba (0,0,0,0);*/
+} 
+
+.outer {
+  	width: 100%;
+  	text-align: center;
+}
+
+.bloodimage {
+	display: inline-block;
+	height: 166px;
+	width: 144px;
+	background-image:url('../img/redbloodcells.jpg');
+	background-repeat:no-repeat;
+}
+
+.slide-row {
+	z-index: 100;
+	position: absolute;
+	height: 100%;
+	top:50%;
+	margin-top: -20px;
+	right: 4px;
+}
+
+/* appl font 
+
+font: 14px/20px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif
+
+button:active, a:active {
+	background: yellow;
+}
+
+*/
+
+
+/* counter screens */
+.calc-input {
+	text-align: center;
+}
+
+.calc-info {
+	display: block;
+	height: 50%;
+}
+
+.calc-info  span {
+	font-weight: bold;
+}
+
+.roundedge {
+	-webkit-border-radius: 10px;
+}
+
+.calc-button-third {
+	height: 92px !important;
+	width: 93px;
+	background: white;
+	font-weight: bold;
+}
+
+/*.calc-button-third:active {
+	height: 92px;
+	width: 93px;
+	background: yellow;
+	font-weight: bold;
+}*/
+
+/* end counter screen */

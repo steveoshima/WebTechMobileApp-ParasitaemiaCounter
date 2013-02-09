@@ -1,0 +1,33 @@
+<div id="popSave" data-role="popup" data-transition="none" class="ui-content">
+		<h3> Confirm </h3>
+		<button id="btnCancel" data-theme="c">Cancel</button>
+		<button id="btnSave" data-theme="b">Save</button>
+</div>
+<div class="calc-info ui-grid-a">
+	<fieldset class="ui-block-a">
+	    <br>
+	    Infected: <br><span id="i"><%= I %>%</span>
+	    <br>
+	    Rings: <br><span id="r"><%= R %>%</span>
+	    <br>
+	    
+	    <br>
+	    Total Cells: <br><span id="total"><%= Total %></span>
+	    <br>
+  	</fieldset>
+  	<fieldset class="ui-block-b">
+  		<br>
+	    Uninfected: <br><span id="u"><%= U %>%</span>
+	    <br>
+	    Trophozoites: <br><span id="t"><%= T %>%</span>
+	    <br>
+	    <br>
+	    <br>
+  	</fieldset>
+</div>
+<hr>
+<div class="calc-input ui-grid-b">
+	<button id="btnRing" data-inline="true" data-mini="true"><h5>Ring<br><span id="rb"><%=Rings%></span></h5></button>
+	<button id="btnTroph" data-inline="true" data-mini="true"><h5>Trophozoite<br><span id="tb"><%=Trophs%></span></h5></button>
+	<button id="btnUninfected" data-inline="true" data-mini="true"><h5>Uninfected<br><span id="ub"><%=Uninfected%></span></h5></button>
+</div>

@@ -1,0 +1,11 @@
+<% if (left) { %>
+<a  <% if (left.navextra) { %> <%= left.navextra %> <% } %> 
+	class="ui-btn-left"><%= left.name %></a>
+<% } %>
+
+<h1 class="ui-title"><%= title %></h1>
+
+<% if (right) { %>
+<a	<% if (right.navextra) { %> <%= right.navextra %> <% } %> 
+   	class="ui-btn-right"><%= right.name %></a>
+<% } %>

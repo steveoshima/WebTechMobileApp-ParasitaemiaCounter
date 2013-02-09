@@ -1,0 +1,13 @@
+<a>
+<h3><%= Name %></h3>
+<p>	
+<%= new moment(DateCreated).format("MMM Do YYYY, h:mma") %>
+</p>
+<span class="lblStage ui-li-count"><%= Stage %></span>
+</a>
+<div style="opacity: 0; z-index:-1" class="slide-row slide-delete">
+	<button data-theme="r" class="btnDelete" data-inline="true" data-mini="true" data-icon="delete">Delete</button>
+</div>
+<div style="opacity: 0; z-index:-1" class="slide-row slide-sync">
+	<button data-theme="b" class="btnSync" data-inline="true" data-mini="true" data-icon="refresh">Sync</button>
+</div>

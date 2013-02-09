@@ -1,0 +1,26 @@
+<h3><%= Name %></h3>
+<p>	
+<%= new moment(DateCreated).format("MMM Do YYYY, h:mma") %>
+</p>
+<hr>
+<div class="calc-info ui-grid-a">
+	<fieldset class="ui-block-a">
+	    <br>
+	    Infected: <br><span id="i"><%= I %>%</span>
+	    <br>
+	    
+	    <br>
+	    Total Cells: <br><span id="total"><%= Total %></span>
+	    <br>
+  	</fieldset>
+
+  	<fieldset class="ui-block-b">
+  		<br>
+	    Uninfected: <br><span id="u"><%= U %>%</span>
+	    <br>
+
+	    <br>
+  	</fieldset>
+</div>
+<br>
+<hr>
