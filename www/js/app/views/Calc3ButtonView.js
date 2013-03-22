@@ -15,7 +15,7 @@ define(["jquery", "backbone", "models/ParasitameiaModel", "text!templates/calc3b
                 // found that event handlers would persist between views
                 this._destroyEvents();
 
-                this.model.set("Type", 2); //two button basic type
+                this.model.set("Type", 2); //three button type
 
                 //this.listenTo(this.model, "change", this.renderQuick);
                 this.model.on("change", this.renderQuick, this);
