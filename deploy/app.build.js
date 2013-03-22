@@ -128,5 +128,5 @@ runner();
 // uglify('../public/js/libs/cordova-2.2.0.js', '../public/js/libs/cordova-2.2.0.min.js');
 
 
-//copy to xcode www
+//copy to xcode www - dev code was in differnt location than xcode proj code, remember to change if code moved.
 wrench.copyDirSyncRecursive('../public/', '/Users/stevensagar/Development/mobile/xcode/paracounter/www/');
