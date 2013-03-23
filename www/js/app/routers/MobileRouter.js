@@ -19,16 +19,16 @@ define(["jquery", "backbone",
                 Backbone.history.start({pushState: false});
             },
 
-            // All of your Backbone Routes (add more)
+            // All of Backbone Routes
             routes: {
                 // When there is no hash bang on the url, the home method is called
                 "": "strains",
                 "strains": "strains",
-                "strain?=:strainId": "strain",
+                "strain?=:strainId": "strain", // odd issue where "strain/:id" doesnt work on iphone embedded browser.
                 "calc3button?=:strainId": "calc3button",
                 "calc2button?=:strainId": "calc2button",
                 "history": "history",
-                "historyitem?=:paraId&strainId=:strainId": "historyitem", // odd issue where "strain/:id" doesnt work?!
+                "historyitem?=:paraId&strainId=:strainId": "historyitem", 
                 "info": "info"
             },
 
@@ -53,11 +53,10 @@ define(["jquery", "backbone",
                 });
                 new FooterView();
 
+                // try out the iscroll plugin, just messing with it to see if it works okay.
                 var footerHeight = $('[data-role="footer"]').outerHeight(true),
                     headerHeight = $('[data-role="header"]').outerHeight(true);
-    
                 $('#scroller').height( $(window).innerHeight() - headerHeight - footerHeight );
-   
                 window.iScroller = new iScroll('scroller', { hScrollbar: false, vScrollbar: false, hScroll: false } );
             },
 
@@ -68,7 +67,7 @@ define(["jquery", "backbone",
                 var paraCollectionFiltered = new ParasitemeiaCollection();
                 var counterListView;
 
-                //tidy up
+                //tidy up nested fetch, no big deal though.
                 strainCollection.fetch({
                     success: function() {
                         counterListView = new CounterListView({
