@@ -107,6 +107,10 @@ require(["jquery", "backbone", "helpers", "routers/MobileRouter",
     window.mobileApp = new MobileRouter();
 
     //navigator.notification.alert("mobile app");
+    
+    // got to the point with performance i was looking at fastclikc but i think jqmobile includes this as "tap" events.
+    // performance on a phone is due the embedded browsers not having a decent javascript engine like nitro etc! 
+    // nothing can be done till the xcode or android equivilent embedded browser get an update
     window.addEventListener('load', function() {
       new FastClick(document.body);
     }, false);
