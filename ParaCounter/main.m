@@ -20,8 +20,8 @@
 //  main.m
 //  ParaCounter
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
+//  Created by Steven Sagar on 9th Jan 2013.
+//  Copyright Steven Sagar 2013. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
